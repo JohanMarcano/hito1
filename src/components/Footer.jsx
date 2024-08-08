@@ -1,14 +1,11 @@
-import './App.css'
+import React from 'react'
 
 function Footer() {
-
   return (
     <>
-      <h1>
-        ● © 2021 - Pizzería Mamma Mia! - Todos los derechos reservados
-      </h1>
+      <p>● © 2021 - Pizzería Mamma Mia! - Todos los derechos reservados</p>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

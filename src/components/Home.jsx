@@ -1,14 +1,14 @@
-import './App.css'
-import CardPizza from './CardPizza'
-import Header from './Header'
+import React from 'react'
+import CardPizza from './CardPizza';
+import Header from './Header';
 
-function Home() {
 
+const Home = () => {
   return (
-    <>
-        <Header />
-        <CardPizza />
-    </>
+    <div>
+      <Header/>
+      <CardPizza/>
+    </div>
   )
 }
 
