@@ -1,12 +1,8 @@
-import './App.css'
 
 function CardPizza() {
-
   return (
     <>
-      <h1>
-        Prueba
-      </h1>
+      <h1>Pizza Card</h1> {/* Añadido contenido para visibilidad */}
     </>
   )
 }
