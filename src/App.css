@@ -1,0 +1,52 @@
+/* Reseteo de márgenes y padding para que el diseño ocupe toda la pantalla */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo general para la aplicación */
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Asegura que el contenedor principal ocupe todo el ancho de la pantalla */
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Estilos para los componentes principales */
+nav.navbar-container {
+  width: 100%;
+}
+
+.navbar-container {
+  padding: 10px 20px;
+  background-color: #343a40; /* Fondo oscuro para la barra de navegación */
+}
+
+/* Asegura que el contenido de la landing se estire a todo lo ancho */
+.home-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Elimina cualquier espacio extra en el contenido */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  padding: 15px; /* Añade un poco de espacio entre las tarjetas */
+}

@@ -1,55 +1,23 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
 
-function CardPizza() {
+function CardPizza({ name, price, ingredients, img }) {
   return (
-    <Container>
-      <Row>
-        <Col xs={12} md={4}> {/* Ajuste de columnas para responsividad */}
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" /> {/* Reemplaza con una URL de imagen válida */}
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xs={12} md={4}> {/* Ajuste de columnas para responsividad */}
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" /> {/* Reemplaza con una URL de imagen válida */}
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xs={12} md={4}> {/* Ajuste de columnas para responsividad */}
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" /> {/* Reemplaza con una URL de imagen válida */}
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+    <Col xs={12} md={4} className="d-flex justify-content-center"> {/* Ajuste de columnas para responsividad */}
+      <Card style={{ width: '18rem' }} className="text-center">
+        <Card.Img variant="top" src={img} /> {/* Usa la URL de imagen recibida por props */}
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>
+            <strong>Precio:</strong> ${price} CLP<br/>
+            <strong>Ingredientes:</strong> {ingredients.join(', ')} 
+          </Card.Text>
+          <Button variant="primary">Ordenar</Button>
+        </Card.Body>
+      </Card>
+    </Col>
   );
 }
 

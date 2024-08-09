@@ -1,22 +1,31 @@
-import React from 'react'
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+import './Navbar.css'; // Asegúrate de tener este archivo CSS para los estilos
 
 function Navbar() {
   const total = 25000;
-  const token = false;
+  const token = false; // Cambia esto a `true` para simular un usuario logueado
 
   return (
-    <>
-      <p>Pizzería Mamma Mía!</p>
-      <ul>
-        <li>🍕Home</li>
-        <li>🔓Profile</li>
-        <li>🔒Logout</li>
-        <li>🔐Login</li>
-        <li>🔐Register</li>
-        <li>🛒Total: ${total}</li>
+    <nav className="navbar-container">
+      <p className="navbar-brand">Pizzería Mamma Mía!</p>
+      <ul className="navbar-list">
+        {token ? (
+          <>
+            <li><Button variant="outline-light">🔓Profile</Button></li>
+            <li><Button variant="outline-light">🔒Logout</Button></li>
+          </>
+        ) : (
+          <>
+            <li><Button variant="outline-light">🔐Login</Button></li>
+            <li><Button variant="outline-light">🔐Register</Button></li>
+          </>
+        )}
+        <li><Button variant="outline-primary">🛒Total: ${total}</Button></li>
       </ul>
-    </>
+    </nav>
   );
 }
 
 export default Navbar;
+
