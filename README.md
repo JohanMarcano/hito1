@@ -1,4 +1,8 @@
-# React + Vite
+# HITO 1 - Pizzería Mamma Mía!
+## React + Vite
+
+Este ejercicio forma parte del curso de React en Desafío Latam 
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
