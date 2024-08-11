@@ -1,52 +1,59 @@
-/* Reseteo de márgenes y padding para que el diseño ocupe toda la pantalla */
-body, html {
-  margin: 0;
-  padding: 0;
+/* Ajuste de las tarjetas y contenedores */
+.card {
+  width: 25rem;
+  margin: 10px; /* Espacio entre tarjetas */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+}
+
+.card img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-/* Estilo general para la aplicación */
-#root {
-  width: 100%;
-  height: 100%;
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  
 }
 
-/* Asegura que el contenedor principal ocupe todo el ancho de la pantalla */
-.container-fluid {
-  padding: 0;
-  margin: 0;
-  width: 100%;
+.card-title {
+  font-weight: bold; /* Pone el texto en negrita */
 }
 
-/* Estilos para los componentes principales */
-nav.navbar-container {
-  width: 100%;
+.list-group-item {
+  border: 1px solid #dee2e6; /* Borde gris claro */
 }
 
-.navbar-container {
-  padding: 10px 20px;
-  background-color: #343a40; /* Fondo oscuro para la barra de navegación */
+.list-group-item:first-child {
+  border-top: none; /* Elimina el borde superior del primer elemento */
 }
 
-/* Asegura que el contenido de la landing se estire a todo lo ancho */
-.home-container {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-/* Elimina cualquier espacio extra en el contenido */
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* Espacio uniforme entre tarjetas */
+  align-items: center;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .col {
   display: flex;
   justify-content: center;
-  padding: 15px; /* Añade un poco de espacio entre las tarjetas */
+  padding: 10px;
+  box-sizing: border-box; /* Asegura que el padding no exceda el contenedor */
 }
+
+.container-fluid, .home-container {
+  min-width: 1200px; /* Asegura que el contenedor tenga el ancho mínimo de 1920 px */
+  height: 100vh;
+}
+
+@media (max-width: 1200px) {
+  .header, .navbar-container {
+      width: 100%; /* Asegura que se ajuste al ancho de la ventana */
+      min-width: auto; /* Elimina el ancho mínimo para pantallas más pequeñas */
+  }
+}
+

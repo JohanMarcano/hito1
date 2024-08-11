@@ -1,11 +1,12 @@
 .navbar-container {
-    display: flex;
-    justify-content: space-between; /* Distribuye el texto y los botones */
-    align-items: center; /* Alinea verticalmente al centro */
-    padding: 10px 20px; /* Añade un poco de espacio alrededor */
-    background-color: #343a40; /* Un color de fondo oscuro similar al de Bootstrap */
-  }
-  
+  display: flex;
+  justify-content: space-between; /* Distribuye el texto y los botones */
+  align-items: center; /* Alinea verticalmente al centro */
+  padding: 10px 20px; /* Añade un poco de espacio alrededor */
+  background-color: #343a40; /* Un color de fondo oscuro similar al de Bootstrap */
+  min-width: 1200px; /* Asegura que el navbar tenga el ancho mínimo */
+}
+
   .navbar-brand {
     color: #fff;
     margin: 0;

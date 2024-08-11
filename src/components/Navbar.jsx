@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import './Navbar.css'; // Asegúrate de tener este archivo CSS para los estilos
-import { formatCurrency } from './utils'; // Importa la función de utilidad para formatear
+import './Navbar.css'; 
+import { formatCurrency } from './utils'; 
 
 function Navbar() {
   const total = 25000;
@@ -23,7 +23,7 @@ function Navbar() {
             <li><Button variant="outline-light">🔐Register</Button></li>
           </>
         )}
-        <li><Button variant="outline-light">🛒Total: ${formatCurrency(total)}</Button></li>
+        <li><Button variant="outline-primary">🛒Total: ${formatCurrency(total)}</Button></li>
       </ul>
     </nav>
   );

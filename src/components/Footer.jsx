@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Footer.css'; 
 
-function Footer() {
-  return (
-    <>
-      <p>● © 2021 - Pizzería Mamma Mia! - Todos los derechos reservados</p>
-    </>
-  );
-}
+const Footer = () => {
+    return (
+        <footer className="footer">
+            <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </footer>
+    );
+};
 
 export default Footer;
