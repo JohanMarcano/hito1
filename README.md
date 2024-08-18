@@ -1,7 +1,8 @@
-# HITO 1 - Pizzería Mamma Mía!
+# Pizzería Mamma Mía!
 ## React + Vite
+## Hito 1 - Hito 2 - Hito 3
 
-Este ejercicio forma parte del curso de React en Desafío Latam 
+Este ejercicio forma parte del curso de React en Desafío Latam en donde estámos creando el front de una pizzería. En Hito 3 ya creamos el cart y usamos renderización dinámica de componentes.
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

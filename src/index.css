@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #213547; /* Color del texto negro */
-  background-color: #ffffff; /* Color de fondo blanco */
+  color: #213547; 
+  background-color: #ffffff; 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,10 +29,10 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-width: 1240px; /* Mantén un ancho mínimo si es necesario */
+  min-width: 1240px; 
   min-height: 100vh;
-  background-color: #ffffff; /* Fondo blanco */
-  color: #213547; /* Texto en negro */
+  background-color: #ffffff; 
+  color: #213547; 
 }
 
 h1 {
@@ -62,19 +62,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Asegúrate de que el contenedor principal esté centrado */
+
 .container {
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  padding: 0 10px; /* Agrega 10px de relleno en los bordes */
+  justify-content: center; 
+  padding: 0 10px; 
 }
 
 /* Estilo para el contenedor de las tarjetas en la fila */
 .row {
   display: flex;
-  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en nuevas filas */
-  justify-content: center; /* Centra las tarjetas horizontalmente */
-  margin: 0 -10px; /* Ajusta los márgenes negativos para el espaciado */
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 0 -10px; 
 }
 
 /* Estilo para cada tarjeta */
@@ -84,9 +84,9 @@ button:focus-visible {
 
 /* Estilo para las imágenes dentro de las tarjetas */
 .card-img-top {
-  width: 100%; /* Ajusta el ancho de la imagen para que cubra todo el contenedor */
-  height: 250px; /* Altura fija para las imágenes */
-  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
 }
 
 /* Estilo para el diseño de las tarjetas en diferentes tamaños de pantalla */
@@ -94,40 +94,40 @@ button:focus-visible {
 /* Mobile - Menos de 380px: 1 tarjeta por fila */
 @media (max-width: 379px) {
   .col-md-4 {
-    flex: 0 0 80%; /* Cada tarjeta ocupa el 80% del ancho del contenedor */
-    max-width: 80%; /* Limita el ancho máximo al 80% */
+    flex: 0 0 80%; 
+    max-width: 80%; 
   }
 }
 
 /* Tablet - Entre 380px y 720px: 2 tarjetas por fila */
 @media (min-width: 380px) and (max-width: 719px) {
   .col-md-4 {
-    flex: 0 0 40%; /* Cada tarjeta ocupa el 40% del ancho del contenedor */
-    max-width: 40%; /* Limita el ancho máximo al 40% */
+    flex: 0 0 40%; 
+    max-width: 40%; 
   }
 }
 
 /* Desktop - Más de 720px: 3 tarjetas por fila */
 @media (min-width: 720px) {
   .col-md-4 {
-    flex: 0 0 30%; /* Cada tarjeta ocupa el 30% del ancho del contenedor */
-    max-width: 30%; /* Limita el ancho máximo al 30% */
+    flex: 0 0 30%; 
+    max-width: 30%; 
   }
 }
 
 /* Estilo para los elementos dentro de ListGroup */
 .card .list-group-item {
-  background-color: #f8f9fa; /* Gris claro para el fondo */
-  border: 1px solid #e9ecef; /* Borde ligeramente más oscuro */
+  background-color: #f8f9fa; 
+  border: 1px solid #e9ecef; 
 }
 
 /* Estilo para la lista de ingredientes en la tarjeta */
 .flush-item ul {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos de la lista se envuelvan en nuevas líneas si es necesario */
-  list-style-type: none; /* Elimina las viñetas de la lista */
-  padding-left: 0; /* Elimina el relleno izquierdo */
-  margin: 0; /* Elimina el margen */
+  flex-wrap: wrap; 
+  list-style-type: none;
+  padding-left: 0; 
+  margin: 0; 
 }
 
 .flush-item ul li {
@@ -136,7 +136,7 @@ button:focus-visible {
 
 /* Estilo para el pie de página de la tarjeta */
 .card-footer {
-  background-color: #f8f9fa; /* Fondo gris claro para el pie de página */
-  border-top: 1px solid #e9ecef; /* Borde superior para separar de los elementos anteriores */
-  padding: 1em; /* Ajusta el espaciado */
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef; 
+  padding: 1em; 
 }
